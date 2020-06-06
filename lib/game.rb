@@ -68,8 +68,9 @@ def current_player #it is player 2 turn, else, player 1
     end
   end
 
-  def turn
+  def turn #when it is player 1 or 2 turn, prompt question:
     puts "Please enter a number 1-9:"
+    #player user input = the current player makes a move on the board 
     @user_input = current_player.move(@board)
     if @board.valid_move?(@user_input)
       @board.update(@user_input, current_player)
