@@ -24,7 +24,7 @@ class Board
   end
 
   def full? #returns true for a full board, returns false for an in progress game
-#a board can return values based on its state
+#a board can return values based on its state when entirely occupied with X and Os. 
     self.cells.all? {|cell| cell == "X" || cell == "O"}
   end
 
