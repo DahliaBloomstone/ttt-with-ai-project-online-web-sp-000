@@ -89,8 +89,8 @@ def current_player #it is player 2 turn, else, player 1
 
   def play
     turn until over? #ask for player input on turn of the game
-    if won? #checks if someone won the game after every turn 
-      puts "Congratulations #{winner}!" 
+    if won? #checks if someone won the game after every turn
+      puts "Congratulations #{winner}!"
     elsif draw?
       puts "Cat's Game!"
     end
