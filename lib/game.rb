@@ -63,8 +63,8 @@ def current_player #it is player 2 turn, else, player 1
 
   def winner
     if won?
-      combination = won? #check for winning combination 
-      @board.cells[combination[0]] # X or O
+      combination = won? #check for winning combination
+      @board.cells[combination[0]] # X or O, returns X when X is won, O when O is won
     end
   end
 
