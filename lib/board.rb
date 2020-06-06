@@ -20,10 +20,10 @@ class Board
   end
 
   def position(user_input) #takes in user input and returns the value of the board cell
-    self.cells[user_input.to_i-1] #1-9 strings, cell array's index 
+    self.cells[user_input.to_i-1] #1-9 strings, cell array's index
   end
 
-  def full?
+  def full? #returns true for a full board, returns false for an in progress game
     self.cells.all? {|cell| cell == "X" || cell == "O"}
   end
 
