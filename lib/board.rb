@@ -4,7 +4,7 @@ class Board
   @cells = [] #array of data
 
   def reset! #can reset the state of the cells to what a board should look like at the start of a game, with an array of 9 elements.
-    self.cells = Array.new(9, " ") #Board.cells = new array of 9 spaces.
+    self.cells = Array.new(9, " ") #Board.cells = new board of 9 spaces.
   end
 
   def initialize #game initializes with an ability to reset the game every time the game is over, sets the board to a 9 element array
