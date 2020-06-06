@@ -31,9 +31,9 @@ class Board
     self.cells.count("X") + self.cells.count("O")
   end
 
-  def taken?(position) #check board position
+  def taken?(position) #check board position, returns true if position is X or O
     self.cells[position.to_i-1] == "X" || #board position -1 because of test using range 1-9 (user input numbers)
-    self.cells[position.to_i-1] == "O"
+    self.cells[position.to_i-1] == "O" #returns false if position is empty or blank 
   end
 
   def valid_move?(position)
