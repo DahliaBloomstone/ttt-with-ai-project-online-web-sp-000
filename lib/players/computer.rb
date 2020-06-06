@@ -1,7 +1,7 @@
-module Players
+module Players #inherits from a Player
   class Computer < Player
 
-    def move(board)
+    def move(board) #move returns a valid position for the computer to move
       if board.cells[4] == " "
         "5"
       elsif board.cells[0] == " "
