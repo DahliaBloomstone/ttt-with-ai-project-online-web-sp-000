@@ -1,7 +1,7 @@
 module Players #inherits from a Player
   class Computer < Player
 
-#      valid_moves = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+# valid_moves = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
     def move(board) #move returns a valid position for the computer to move
       if board.cells[4] == " "
