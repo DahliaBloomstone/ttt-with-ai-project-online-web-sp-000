@@ -3,7 +3,7 @@
 module Players
   class Human < Player
 
-    def move(board)
+    def move(board) #implement a move method that takes in a board.
       input = gets.strip
     end
   end
