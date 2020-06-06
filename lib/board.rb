@@ -49,4 +49,5 @@ class Board
 
 
 end
-#self refers to the board here?
+
+#self refers to the board here.
