@@ -23,7 +23,7 @@ class Game
 
 #Returns current player X for the 3rd move. (Odd turn count)
 #game.board.cells = ["O", " ", " ", " ", "X", " ", " ", " ", " "]
-def current_player #it is player 2 turn, else, player 1 
+def current_player #it is player 2 turn, else, player 1
      board.turn_count.odd? ? player_2 : player_1
   end
 
@@ -63,7 +63,7 @@ def current_player #it is player 2 turn, else, player 1
 
   def winner
     if won?
-      combination = won?
+      combination = won? #check for winning combination 
       @board.cells[combination[0]] # X or O
     end
   end
