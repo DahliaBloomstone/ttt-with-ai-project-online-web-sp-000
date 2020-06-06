@@ -20,7 +20,7 @@ class Board
   end
 
   def position(user_input) #takes in user input and returns the value of the board cell
-    self.cells[user_input.to_i-1]
+    self.cells[user_input.to_i-1] #1-9 strings, cell array's index 
   end
 
   def full?
