@@ -23,8 +23,7 @@ class Game
 
 #Returns current player X for the 3rd move. (Odd turn count)
 #game.board.cells = ["O", " ", " ", " ", "X", " ", " ", " ", " "]
-
-  def current_player
+def current_player
      board.turn_count.odd? ? player_2 : player_1
   end
 
