@@ -28,6 +28,9 @@ def current_player
   end
 
   def won?
+  #it 'returns false for a draw' do
+  #game = Game.new
+  #game.board.cells = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
     WIN_COMBINATIONS.each do |combination|   #[0,1,2] which is board range (0-8)
         if @board.cells[combination[0]] == @board.cells[combination[1]] &&
           @board.cells[combination[1]] == @board.cells[combination[2]] &&
