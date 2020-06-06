@@ -21,6 +21,7 @@ class Game
     @board.display #access to board display
   end
 
+#Returns current player X for the 3rd move. (Odd turn count)
   def current_player
      board.turn_count.odd? ? player_2 : player_1
   end
