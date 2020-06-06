@@ -78,8 +78,9 @@ def current_player #it is player 2 turn, else, player 1
       @board.update(@user_input, current_player)
 #if there is no input, prompt the user to enter a number 1-9
     else puts "Please enter a number 1-9:"
-#update board display 
+#update board display
       @board.display
+#call turn method 
       turn
     end
     @board.display
