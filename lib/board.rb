@@ -1,5 +1,5 @@
 class Board
-  attr_accessor :cells
+  attr_accessor :cells #stores the data of the state of the board in an array
 
   @cells = []
 
