@@ -38,7 +38,7 @@ class Board
     self.cells[position.to_i-1] == "O" #returns false if position is empty or blank
   end
 
-  def valid_move?(position) #returns true for user input between 1-9 that is not taken
+  def valid_move?(position) #returns true for user input between 1-9. Returns true that that move is not taken. 
   !taken?(position) && position.to_i >0 && position.to_i <=9
 #if position is not taken, and position index is greater than 0, and position is less than or equal to 9
   end
