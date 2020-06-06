@@ -1,4 +1,4 @@
-#class Human that inherits from Player 
+#class Human that inherits from Player
 
 module Players
   class Human < Player
