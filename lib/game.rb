@@ -35,11 +35,11 @@ def current_player
         if @board.cells[combination[0]] == @board.cells[combination[1]] &&
           @board.cells[combination[1]] == @board.cells[combination[2]] &&
           @board.taken?(combination[0]+1)
-          game.board.cells = ["O", "O", "O",
-                              "X", "X", " ",
-                              " ", " ", "X"]
+          #game.board.cells = ["O", "O", "O",
+                            #  "X", "X", " ",
+                            #  " ", " ", "X"]
 
-          expect(game.won?).to contain_exactly(0, 1, 2)
+        #  expect(game.won?).to contain_exactly(0, 1, 2)
 
           return combination
         end
