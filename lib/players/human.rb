@@ -10,4 +10,5 @@ module Players
 end
 
 
-#reminder: gets.strip 
+#reminder: gets.strip removes whitespace and new lines
+#allows for user input 
