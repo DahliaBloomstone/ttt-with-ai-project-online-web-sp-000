@@ -7,7 +7,7 @@ class Board
     self.cells = Array.new(9, " ")
   end
 
-  def initialize #game initializes with an ability to reset the game every time the game is over, sets the board to a 9 element array 
+  def initialize #game initializes with an ability to reset the game every time the game is over, sets the board to a 9 element array
     self.cells = Array.new(9, " ")
   end
 
