@@ -1,7 +1,7 @@
 class Board
   attr_accessor :cells #stores the data of the state of the board in an array
 
-  @cells = [] #array of data 
+  @cells = [] #array of data
 
   def reset! #can reset the state of the cells to what a board should look like at the start of a game, with an array of 9 elements. 
     self.cells = Array.new(9, " ")
