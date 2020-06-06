@@ -27,7 +27,7 @@ class Board
     self.cells.all? {|cell| cell == "X" || cell == "O"}
   end
 
-  def turn_count
+  def turn_count #returns the amount of turns baseed on a call value
     self.cells.count("X") + self.cells.count("O")
   end
 
