@@ -83,7 +83,7 @@ def current_player #it is player 2 turn, else, player 1
 #call turn method
       turn
     end
-    #call new board display 
+    #show new board display 
     @board.display
   end
 
