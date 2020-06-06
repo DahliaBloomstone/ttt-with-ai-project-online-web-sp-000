@@ -41,7 +41,7 @@ class Board
 #if position is not taken, and position index is greater than 0, and position is less than or equal to 9
   end
 
-  def update(position, player)
+  def update(position, player) #updates the cells in the board with the player token according to the input 
       self.cells[position.to_i-1] = player.token
   end
 
