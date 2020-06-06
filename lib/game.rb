@@ -13,11 +13,12 @@ class Game
   [0,4,8],
   [2,4,6] ]
 
+#Initialize accepts two players and a board. Player 1 = class Human that inherits from the Player. Player 1 = X. Player 2 = O. 
   def initialize(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
     @player_1 = player_1 #provides access to player 1
     @player_2 = player_2 #provides access to player 2
     @board = board #provides access to the board
-    @board.display
+    @board.display #
   end
 
   def current_player
