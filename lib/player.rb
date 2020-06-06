@@ -3,7 +3,7 @@ class Player
   attr_reader :token
 
   def initialize(token) #accepts a token to assign.
-    @token = token
+    @token = token #token cannot be changed once assigned to initialize.
   end
 
 end
