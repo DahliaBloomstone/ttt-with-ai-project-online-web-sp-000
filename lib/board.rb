@@ -3,7 +3,7 @@ class Board
 
   @cells = [] #array of data
 
-  def reset! #can reset the state of the cells to what a board should look like at the start of a game, with an array of 9 elements. 
+  def reset! #can reset the state of the cells to what a board should look like at the start of a game, with an array of 9 elements.
     self.cells = Array.new(9, " ")
   end
 
