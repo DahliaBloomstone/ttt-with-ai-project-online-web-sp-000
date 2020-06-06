@@ -74,7 +74,7 @@ def current_player #it is player 2 turn, else, player 1
     @user_input = current_player.move(@board)
     #if there is a valid move on the board, accept the user input
     if @board.valid_move?(@user_input)
-#the board updates when there is user input from the current player
+#the board updates when there is user input from the current player, asks next player to go
       @board.update(@user_input, current_player)
 #if there is no input, prompt the user to enter a number 1-9
     else puts "Please enter a number 1-9:"
@@ -83,7 +83,7 @@ def current_player #it is player 2 turn, else, player 1
 #call turn method
       turn
     end
-    #show new board display 
+    #show new board display
     @board.display
   end
 
