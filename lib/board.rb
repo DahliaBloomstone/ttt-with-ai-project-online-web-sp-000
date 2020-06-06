@@ -43,7 +43,7 @@ class Board
   end
 
   def update(position, player) #updates the cells in the board with the player token according to the input
-      self.cells[position.to_i-1] = player.token #call token method when you update the appropriate index in the cells. 
+      self.cells[position.to_i-1] = player.token #call token method when you update the appropriate index in the cells.
   end
 
 
