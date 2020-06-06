@@ -48,8 +48,12 @@ def current_player
   end
 
 
-  def draw? #returns true for a draw and false for a win
+  def draw? #returns true for a draw and false for a win, or in progress game
     @board.full? && !won? ? true : false
+  #  game.board.cells = ["X", "O", "X", "O", "X", "X", "O", "X", "O"] true 
+  
+
+
   end
 
   def over?
