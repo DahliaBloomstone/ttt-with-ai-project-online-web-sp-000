@@ -14,8 +14,8 @@ class Game
   [2,4,6] ]
 
   def initialize(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
-    @player_1 = player_1
-    @player_2 = player_2
+    @player_1 = player_1 #provides access to player 1
+    @player_2 = player_2 #provides access to player 2
     @board = board #provides access to the board
     @board.display
   end
