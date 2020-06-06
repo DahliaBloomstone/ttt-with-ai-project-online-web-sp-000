@@ -33,10 +33,10 @@ class Board
 
   def taken?(position) #check board position, returns true if position is X or O
     self.cells[position.to_i-1] == "X" || #board position -1 because of test using range 1-9 (user input numbers)
-    self.cells[position.to_i-1] == "O" #returns false if position is empty or blank 
+    self.cells[position.to_i-1] == "O" #returns false if position is empty or blank
   end
 
-  def valid_move?(position)
+  def valid_move?(position) #returns true for user input between 1-9 that is not taken 
     !taken?(position) && position.to_i >0 && position.to_i <=9
   end
 
