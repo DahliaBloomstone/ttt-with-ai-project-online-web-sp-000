@@ -47,7 +47,8 @@ def current_player
     return false
   end
 
-  def draw?
+
+  def draw? #returns true for a draw and false for a win
     @board.full? && !won? ? true : false
   end
 
