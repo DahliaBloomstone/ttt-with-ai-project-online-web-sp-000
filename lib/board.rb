@@ -19,7 +19,7 @@ class Board
     puts " #{self.cells[6]} | #{self.cells[7]} | #{self.cells[8]} "
   end
 
-  def position(user_input)
+  def position(user_input) #takes in user input and returns the value of the board cell
     self.cells[user_input.to_i-1]
   end
 
