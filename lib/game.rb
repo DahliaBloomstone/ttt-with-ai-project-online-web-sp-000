@@ -80,7 +80,7 @@ def current_player #it is player 2 turn, else, player 1
     else puts "Please enter a number 1-9:"
 #update board display
       @board.display
-#call turn method
+#call turn method, checks if game is over after every turn
       turn
     end
     #show new board display
