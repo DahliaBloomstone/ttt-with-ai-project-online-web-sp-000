@@ -57,7 +57,8 @@ def current_player
 
   def over?
      (won? || draw?) ? true : false
-     # IF board is not full, game is in progress (FALSE), ELSE, game is over (TRUE)
+     # If board is not full, game is in progress, so FALSE
+     # ELSE, game is over TRUE
   end
 
   def winner
